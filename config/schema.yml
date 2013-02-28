@@ -1,0 +1,8 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  tasks:
+    _attributes: { phpName: Tasks }
+    id: { phpName: Id, type: INTEGER, size: '8', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: VARCHAR, size: '255', required: true }
